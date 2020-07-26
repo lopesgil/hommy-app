@@ -5,6 +5,9 @@
         </ion-buttons>
         <ion-title>Início</ion-title>
     </ion-toolbar>
+    <ion-toolbar>
+        <ion-searchbar placeholder="Procurar repúblicas"></ion-searchbar>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
@@ -76,4 +79,14 @@
             </ion-card>
         </ion-slide>
     </ion-slides>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="list"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+            <ion-fab-button routerLink="/favoritas">
+                <ion-icon name="bookmark"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
 </ion-content>
