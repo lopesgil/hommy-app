@@ -14,68 +14,12 @@
     <ion-slides>
         <ion-slide>
             <ion-card class="anuncio" color="tertiary">
-                <ion-img src="../../assets/img/republica1.jpg"></ion-img>
+                <ion-img [src]=republica1.img></ion-img>
                 <ion-card-header>
-                    <ion-card-subtitle>Avenida dos Sonhos Quebrados, nº 219</ion-card-subtitle>
-                    <ion-card-title>Vila das Flores - Cidade Maravilha</ion-card-title>
+                    <ion-card-subtitle>{{republica1.endereco}}</ion-card-subtitle>
+                    <ion-card-title>{{republica1.bairro + ' - ' + republica1.cidade}}</ion-card-title>
                 </ion-card-header>
-                <ion-card-content>
-                    4 quartos, 12 beliches, área de serviço ampla, salão de jogos,
-                    bem localizada próxima à estação de metro.
-                </ion-card-content>
-            </ion-card>
-        </ion-slide>
-        <ion-slide>
-            <ion-card class="anuncio" color="tertiary">
-                <ion-img src="../../assets/img/republica2.jpg"></ion-img>
-                <ion-card-header>
-                    <ion-card-subtitle>Estrada dos Velhos Tijolos Amarelos, nº 234</ion-card-subtitle>
-                    <ion-card-title>Pedra Lascada - São Miguel</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                    10 quartos duplos, espaço amplo, inovador, instalações modernas,
-                    área comunitária perfeita tanto para lazer quanto estudos,
-                    excelente localização.
-                </ion-card-content>
-            </ion-card>
-        </ion-slide>
-        <ion-slide>
-            <ion-card class="anuncio" color="tertiary">
-                <ion-img src="../../assets/img/republica3.jpg"></ion-img>
-                <ion-card-header>
-                    <ion-card-subtitle>Rua Pônei Doce, nº 510</ion-card-subtitle>
-                    <ion-card-title>Divino - Cidade Maravilha</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                    4 quartos, 4 beliches, ambiente acessível, confortável e
-                    seguro, bem localizado.
-                </ion-card-content>
-            </ion-card>
-        </ion-slide>
-        <ion-slide>
-            <ion-card class="anuncio" color="tertiary">
-                <ion-img src="../../assets/img/republica4.jpg"></ion-img>
-                <ion-card-header>
-                    <ion-card-subtitle>Travessa Rubi, nº 232</ion-card-subtitle>
-                    <ion-card-title>Portelinha - Cidade Maravilha</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                    Por outro lado, a competitividade nas transações comerciais
-                    deve passar por modificações independentemente das formas de ação.
-                </ion-card-content>
-            </ion-card>
-        </ion-slide>
-        <ion-slide>
-            <ion-card class="anuncio" color="tertiary">
-                <ion-img src="../../assets/img/republica5.jpg"></ion-img>
-                <ion-card-header>
-                    <ion-card-subtitle>Baía Inglesa, nº 084</ion-card-subtitle>
-                    <ion-card-title>Formigas - Santada de Bocaiúvas</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                    5 quartos, 4 beliches, confortável, acessível, localizado
-                    proximo a estação de trem, ambiente comum aconchegante.
-                </ion-card-content>
+                <ion-card-content>{{republica1.descricao}}</ion-card-content>
             </ion-card>
         </ion-slide>
     </ion-slides>
