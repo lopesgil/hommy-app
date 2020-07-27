@@ -12,14 +12,14 @@
 
 <ion-content>
     <ion-slides>
-        <ion-slide>
+        <ion-slide *ngFor="let republica of republicas">
             <ion-card class="anuncio" color="tertiary">
-                <ion-img [src]=republica1.img></ion-img>
+                <ion-img [src]=republica.img></ion-img>
                 <ion-card-header>
-                    <ion-card-subtitle>{{republica1.endereco}}</ion-card-subtitle>
-                    <ion-card-title>{{republica1.bairro + ' - ' + republica1.cidade}}</ion-card-title>
+                    <ion-card-subtitle>{{republica.endereco}}</ion-card-subtitle>
+                    <ion-card-title>{{republica.bairro + ' - ' + republica.cidade}}</ion-card-title>
                 </ion-card-header>
-                <ion-card-content>{{republica1.descricao}}</ion-card-content>
+                <ion-card-content>{{republica.descricao}}</ion-card-content>
             </ion-card>
         </ion-slide>
     </ion-slides>
