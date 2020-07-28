@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-export class Republica {
-  img: string;
-  endereco: string;
-  cidade: string;
-  bairro: string;
-  descricao: string;
-}
+import { Republica } from '../republica';
 
 @Component({
   selector: 'app-home',
