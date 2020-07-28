@@ -24,6 +24,7 @@ export class HomePage implements OnInit {
         camas: 24,
         vagas: 14,
         preco: 400,
+        likes: 73,
         descricao: '4 quartos, 12 beliches, área de serviço ampla, salão de jogos, bem localizada próxima à estação de metro.',
       },
       {
@@ -36,6 +37,7 @@ export class HomePage implements OnInit {
         camas: 20,
         vagas: 2,
         preco: 740,
+        likes: 210,
         descricao: '10 quartos duplos, espaço amplo, inovador, instalações modernas, área comunitária perfeita tanto para lazer quanto estudos, excelente localização.'
       },
       {
@@ -48,6 +50,7 @@ export class HomePage implements OnInit {
         camas: 8,
         vagas: 4,
         preco: 385.5,
+        likes: 99,
         descricao: '4 quartos, 4 beliches, ambiente acessível, confortável e seguro, bem localizado.',
       },
       {
@@ -60,6 +63,7 @@ export class HomePage implements OnInit {
         camas: 16,
         vagas: 4,
         preco: 410.3,
+        likes: 122,
         descricao: 'Por outro lado, a competitividade nas transações comerciais deve passar por modificações independentemente das formas de ação.',
       },
       {
@@ -72,6 +76,7 @@ export class HomePage implements OnInit {
         camas: 9,
         vagas: 3,
         preco: 450,
+        likes: 115,
         descricao: '5 quartos, 4 beliches, confortável, acessível, localizado proximo a estação de trem, ambiente comum aconchegante.',
       },
     ];

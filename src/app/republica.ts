@@ -8,5 +8,6 @@ export class Republica {
   camas: number;
   vagas: number;
   preco: number;
+  likes: number;
   descricao: string;
 }
