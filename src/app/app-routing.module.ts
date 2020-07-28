@@ -22,7 +22,8 @@ const routes: Routes = [
   {
     path: 'detalhes/:id',
     loadChildren: () => import('./detalhes/detalhes.module').then( m => m.DetalhesPageModule)
-  },  {
+  },
+  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
