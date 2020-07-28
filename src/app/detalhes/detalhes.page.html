@@ -1,9 +1,35 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>detalhes</ion-title>
+  <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>Detalhes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <ion-grid>
+        <ion-row class="ion-justify-content-between">
+            <ion-col size="auto">
+                <h5>{{republica.endereco}}</h5>
+                <h3>{{republica.bairro + ' - ' + republica.cidade}}</h3>
+            </ion-col>
+            <ion-col>
+                <ion-chip>
+                    <ion-label>5.00</ion-label>
+                    <ion-icon name="star"></ion-icon>
+                </ion-chip>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <h5>Rua Ariana, nº 7, Copacabana - Rio de Janeiro</h5>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <h3>Vagas disponíveis:</h3>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

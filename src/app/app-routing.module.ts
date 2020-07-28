@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./favoritas/favoritas.module').then( m => m.FavoritasPageModule)
   },
   {
-    path: 'detalhes',
+    path: 'detalhes/:id',
     loadChildren: () => import('./detalhes/detalhes.module').then( m => m.DetalhesPageModule)
   }
 ];

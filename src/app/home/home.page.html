@@ -13,7 +13,7 @@
 <ion-content>
     <ion-slides>
         <ion-slide *ngFor="let republica of republicas">
-            <ion-card class="anuncio" color="tertiary">
+            <ion-card class="anuncio" color="tertiary" [routerLink]="['/detalhes', republica.id]">
                 <ion-img [src]=republica.img></ion-img>
                 <ion-card-header>
                     <ion-card-subtitle>{{republica.endereco}}</ion-card-subtitle>
