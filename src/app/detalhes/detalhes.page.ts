@@ -91,38 +91,27 @@ export class DetalhesPage implements OnInit {
     this.republica = this.republicas[this.republicaId];
   }
 
-  chipCurtir() {
-    this.curtirAlt();
-    this.toastCurtido();
-  }
-
-  curtirAlt() {
-    if (this.estaCurtido) {
-      this.estaCurtido = false;
-      this.republica.likes--;
-    } else {
-      this.estaCurtido = true;
+  handleChip(event: boolean) {
+    if (event) {
       this.republica.likes++;
+    } else {
+      this.republica.likes--;
     }
+    this.estaCurtido = event;
+
+    this.toastCurtido();
   }
 
   async toastCurtido() {
     const toast = await this.toastController.create({
       message: this.estaCurtido ? 'Anúncio curtido!' : 'Anúncio descurtido!',
-      duration: 3000,
-      buttons: [
-        {
-          text: 'Cancelar',
-          role: 'cancel',
-          handler: () => {
-            this.curtirAlt();
-          },
-        }
-      ]
+      duration: 1500,
     });
 
     toast.present();
   }
+
+
 
   async confirmarSalvo() {
     const alert = await this.alertController.create({

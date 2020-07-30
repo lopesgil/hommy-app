@@ -8,6 +8,8 @@ import { DetalhesPageRoutingModule } from './detalhes-routing.module';
 
 import { DetalhesPage } from './detalhes.page';
 
+import { LikeChipComponent } from '../components/like-chip/like-chip.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { DetalhesPage } from './detalhes.page';
     IonicModule,
     DetalhesPageRoutingModule
   ],
-  declarations: [DetalhesPage]
+  declarations: [DetalhesPage, LikeChipComponent]
 })
 export class DetalhesPageModule {}
